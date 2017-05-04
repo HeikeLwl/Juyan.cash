@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:id="@+id/item_root_layout"
+              android:background="@drawable/grid_even_background"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_turnover_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:maxLines="2"
+        android:text="2017-03-18 14:39"
+        android:textColor="@color/dark"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/graydark"/>
+
+    <TextView
+        android:id="@+id/tv_cashier_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:maxLines="2"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"
+        android:text="收银员名称"
+        android:textColor="@color/dark"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/graydark"/>
+
+    <TextView
+        android:id="@+id/tv_turnover_start_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:maxLines="2"
+        android:text="2017-03-18 14:39"
+        android:textColor="@color/dark"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/graydark"/>
+
+    <TextView
+        android:id="@+id/tv_turnover_end_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:maxLines="2"
+        android:text="2017-03-18 14:39"
+        android:textColor="@color/dark"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/graydark"/>
+
+    <TextView
+        android:id="@+id/tv_area_type"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:maxLines="2"
+        android:text="区域"
+        android:textColor="@color/dark"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/graydark"/>
+
+    <TextView
+        android:id="@+id/tv_print_again"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minLines="2"
+        android:drawableLeft="@drawable/print"
+        android:text="补打"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"/>
+
+</LinearLayout>

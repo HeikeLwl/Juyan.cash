@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_back_1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/dialog_back_0"
+            android:gravity="center"
+            android:text="大厅2号桌"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_18"/>
+
+        <ImageButton
+            android:id="@+id/ib_cancle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/del"/>
+
+        <TextView
+            android:id="@+id/tv_table_seat_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ib_cancle"
+            android:layout_marginLeft="@dimen/padding_12"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_16"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_table_seat_count"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_12">
+
+            <Button
+                android:id="@+id/btn_open"
+                style="@style/btnStyleNormal1"
+                android:text="开台"/>
+
+            <Button
+                android:id="@+id/btn_quickopen"
+                style="@style/btnStyleNormal1"
+                android:text="快速开台"/>
+
+            <Button
+                android:id="@+id/btn_schedule"
+                style="@style/btnStyleNormal1"
+                android:text="预定"/>
+
+            <Button
+                android:id="@+id/btn_schedule_history"
+                style="@style/btnStyleNormal1"
+                android:text="预定记录"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

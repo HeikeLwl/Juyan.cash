@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:padding="@dimen/padding_8">
+
+        <TextView
+            android:id="@+id/tv_dish_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="菜名"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_18"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="86dp"
+            android:text="数量："
+            android:textSize="@dimen/font_16"/>
+
+        <EditText
+            android:id="@+id/et_count"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_background_0"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:padding="@dimen/padding_6"
+            android:textColor="@color/reddark"
+            android:textSize="@dimen/font_16"/>
+
+        <TextView
+            android:id="@+id/tv_dish_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_dish_name"
+            android:layout_alignBottom="@+id/tv_dish_name"
+            android:layout_centerHorizontal="true"
+            android:text="￥15.0/份"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_18"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graydark"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_12">
+
+            <LinearLayout
+                android:id="@+id/layout_guige"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="规格"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_18"/>
+
+                <jufeng.juyancash.ui.customview.CustomeRadioGroup1
+                    android:id="@+id/rg_guige"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_8"
+                    android:background="@drawable/radiogroup_background"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_zuofa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="做法"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_18"/>
+
+                <jufeng.juyancash.ui.customview.CustomeRadioGroup1
+                    android:id="@+id/rg_zuofa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_8"
+                    android:background="@drawable/radiogroup_background"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="备注"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_18"/>
+
+                <TextView
+                    android:id="@+id/et_dish_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_8"
+                    android:background="@drawable/radiogroup_background"
+                    android:clickable="true"
+                    android:gravity="top"
+                    android:hint="添加备注..."
+                    android:minLines="5"
+                    android:padding="@dimen/padding_8"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_8">
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_button_selector"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_12"
+            android:background="@drawable/red_button_selector"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_12"
+            android:background="@drawable/blue_button_selector"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16"/>
+    </LinearLayout>
+
+</LinearLayout>

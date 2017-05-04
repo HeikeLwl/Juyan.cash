@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/padding_12">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="线下会员卡卡号"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_16"/>
+
+        <EditText
+            android:id="@+id/et_card_number0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_selector"
+            android:hint="请输入线下会员卡号"
+            android:inputType="number"
+            android:padding="@dimen/padding_6"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_16"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="微信会员卡卡号"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_16"/>
+
+        <EditText
+            android:id="@+id/et_card_number1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_selector"
+            android:hint="扫描微信会员卡二维码或输入卡号"
+            android:inputType="number"
+            android:padding="@dimen/padding_6"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_16"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="线下会员卡余额"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_16"/>
+
+        <EditText
+            android:id="@+id/et_init_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_selector"
+            android:hint="请输入线下会员卡余额"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/padding_6"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_16"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_18"
+        android:layout_weight="0"
+        android:background="@drawable/red_button_selector"
+        android:text="绑定会员"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"/>
+
+</LinearLayout>

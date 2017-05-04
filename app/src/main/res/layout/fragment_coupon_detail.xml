@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dialog_back_1">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/dialog_back_0"
+        android:gravity="center"
+        android:text="优惠券详情"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_20"/>
+
+    <TextView
+        android:id="@+id/label_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:padding="@dimen/padding_8"
+        android:text="优惠券类型："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_18"/>
+
+    <TextView
+        android:id="@+id/label_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_1"
+        android:padding="@dimen/padding_8"
+        android:text="最低消费金额（单位：元）："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_18"/>
+
+    <TextView
+        android:id="@+id/label_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_2"
+        android:padding="@dimen/padding_8"
+        android:text="是否可与会员卡同时使用："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_18"/>
+
+    <TextView
+        android:id="@+id/label_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_3"
+        android:padding="@dimen/padding_8"
+        android:text="是否适用于不可打折的商品和套餐："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_18"/>
+
+    <TextView
+        android:id="@+id/label_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_4"
+        android:padding="@dimen/padding_8"
+        android:text="使用状态："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_18"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/label_0"
+        android:background="@color/graydark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/label_0"
+        android:background="@color/graydark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/label_1"
+        android:background="@color/graydark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/label_2"
+        android:background="@color/graydark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/label_3"
+        android:background="@color/graydark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/label_4"
+        android:background="@color/graydark"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/label_0"
+        android:gravity="right"
+        android:padding="@dimen/padding_8"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/font_16"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_face_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_0"
+        android:layout_toRightOf="@id/label_1"
+        android:gravity="right"
+        android:padding="@dimen/padding_8"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/font_16"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_min_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_1"
+        android:layout_toRightOf="@id/label_2"
+        android:gravity="right"
+        android:padding="@dimen/padding_8"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/font_16"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_with_vip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_2"
+        android:layout_toRightOf="@id/label_3"
+        android:gravity="right"
+        android:padding="@dimen/padding_8"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/font_16"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_with_special_dish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_3"
+        android:layout_toRightOf="@id/label_4"
+        android:gravity="right"
+        android:padding="@dimen/padding_8"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/font_16"/>
+
+    <RadioGroup
+        android:id="@+id/rg_coupon_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_4"
+        android:layout_toRightOf="@id/label_5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_6">
+
+        <RadioButton
+            android:id="@+id/rb_used"
+            style="@style/RadioButtonCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_6"
+            android:text="使用"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_6"
+            android:background="@color/graydark"/>
+
+        <RadioButton
+            android:id="@+id/rb_unuse"
+            style="@style/RadioButtonCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_6"
+            android:text="不使用"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_coupon_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="@dimen/padding_4"
+            android:drawableTop="@drawable/no"
+            android:gravity="center"
+            android:padding="@dimen/padding_6"
+            android:text="关闭"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/graydark"/>
+
+        <TextView
+            android:id="@+id/tv_coupon_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="@dimen/padding_4"
+            android:drawableTop="@drawable/yes"
+            android:gravity="center"
+            android:padding="@dimen/padding_6"
+            android:text="确定"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/graydark"/>
+
+        <TextView
+            android:id="@+id/tv_coupon_change"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="@dimen/padding_4"
+            android:drawableTop="@drawable/change"
+            android:gravity="center"
+            android:padding="@dimen/padding_6"
+            android:text="替换优惠券"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/layout"
+        android:background="@color/graydark"/>
+
+    <TextView
+        android:id="@+id/label_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_8"
+        android:text="优惠券面值（单位：元）："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_18"
+        android:layout_below="@+id/label_0"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

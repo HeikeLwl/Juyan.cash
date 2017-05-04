@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_30"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/padding_18"
+        android:layout_weight="1"
+        android:background="@drawable/gray_cornor_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_6"
+            android:paddingTop="@dimen/padding_6">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="客户姓名"
+                    android:textColor="@color/dark"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/et_takeout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_4"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background_white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="*"
+                    android:textColor="@color/reddark"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="联系电话"
+                    android:textColor="@color/dark"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/et_takeout_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_4"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background_white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_6"
+            android:paddingTop="@dimen/padding_6">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="*"
+                    android:textColor="@color/reddark"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="送餐时间"
+                    android:textColor="@color/dark"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_takeout_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_4"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background_white"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/white_background_selector"
+                    android:src="@drawable/search"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="*"
+                    android:textColor="@color/reddark"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="送餐地址"
+                    android:textColor="@color/dark"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/et_takeout_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_4"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background_white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_6"
+            android:paddingTop="@dimen/padding_6">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="备注信息"
+                    android:textColor="@color/dark"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/et_takeout_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_4"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background_white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_takeout_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_18"
+            android:background="@drawable/orange_button_selector"
+            android:text="开始点餐"
+            android:textColor="@color/white"
+            android:textSize="@dimen/padding_18"/>
+
+    </LinearLayout>
+</LinearLayout>

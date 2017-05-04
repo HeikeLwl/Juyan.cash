@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="storeversion">
+        <item >中餐版</item>
+        <item >快餐版</item>
+        <item >奶茶版</item>
+    </string-array>
+
+    <string-array name="paymode">
+        <item >现金支付</item>
+        <item >银行卡支付</item>
+        <item >微信支付</item>
+        <item >支付宝支付</item>
+    </string-array>
+
+    <string-array name="tags">
+        <item >dazhe</item>
+        <item >moling</item>
+        <item >tuicai</item>
+        <item >zengcai</item>
+        <item >fanjiezhang</item>
+        <item >qingkongchuda</item>
+        <item >guazhang</item>
+        <item>fanjiezhangsome</item>
+        <item>fanjiezhangall</item>
+        <item>bindvip</item>
+        <item>dazheAll</item>
+    </string-array>
+
+    <string-array name="cardType">
+        <item >初级会员</item>
+        <item >中级会员</item>
+        <item >高级会员</item>
+    </string-array>
+
+</resources>

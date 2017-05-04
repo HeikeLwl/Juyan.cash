@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:background="@drawable/dialog_back_1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/dialog_back_0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/padding_6"
+                android:maxLines="1"
+                android:text="消息类型"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/dark"/>
+
+            <TextView
+                android:id="@+id/tv_order_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/padding_6"
+                android:maxLines="1"
+                android:text="单号"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/dark"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout"
+            android:layout_marginBottom="61dp"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/graydark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_4"
+                android:drawableTop="@drawable/confirm"
+                android:text="我知道了"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/dark"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graydark"/>
+
+            <TextView
+                android:id="@+id/tv_clear_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_4"
+                android:drawableTop="@drawable/cancle"
+                android:text="全部清空"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/reddark"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

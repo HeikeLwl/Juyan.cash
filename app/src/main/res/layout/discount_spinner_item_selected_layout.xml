@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/tv_str"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/default_spinner_background"
+          android:gravity="center"
+          android:maxEms="8"
+          android:maxLines="1"
+          android:minEms="6"
+          android:layout_margin="@dimen/padding_4"
+          android:padding="@dimen/padding_4"
+          android:text="全部"
+          android:textColor="@color/white"
+          android:textSize="@dimen/font_14"/>

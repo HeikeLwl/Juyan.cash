@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/padding_6"
+        android:text="账单"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_22"/>
+
+    <ImageButton
+        android:id="@+id/ib_cancel_order"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:paddingLeft="@dimen/padding_6"
+        android:paddingRight="@dimen/padding_6"
+        android:scaleType="center"
+        android:src="@drawable/delete_black"/>
+
+    <TextView
+        android:id="@+id/tv_order_number"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/label_0"
+        android:minEms="3"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingRight="@dimen/dp_6"
+        android:paddingTop="@dimen/dp_6"
+        android:gravity="center"
+        android:text="NO.003"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/font_14"/>
+
+    <TextView
+        android:id="@+id/label_0"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingLeft="@dimen/dp_6"
+        android:paddingTop="@dimen/dp_6"
+        android:text="单号："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_14"/>
+
+    <TextView
+        android:id="@+id/tv_serial_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_title"
+        android:gravity="center"
+        android:minEms="3"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingRight="@dimen/dp_6"
+        android:paddingTop="@dimen/dp_6"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/font_14"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_title"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:background="@color/gray"
+        android:padding="@dimen/dp_6">
+
+        <TextView
+            android:id="@+id/label_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="共"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+        <TextView
+            android:id="@+id/tv_dish_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/label_3"
+            android:gravity="center"
+            android:minEms="2"
+            android:textColor="@color/reddark"
+            android:textSize="@dimen/font_18"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/label_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_dish_count"
+            android:text="项"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+        <TextView
+            android:id="@+id/tv_total_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:minEms="2"
+            android:textColor="@color/reddark"
+            android:textSize="@dimen/font_18"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/label_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_total_money"
+            android:text="合计：￥"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/framelayout"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_6"
+            android:text="菜品名称"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/padding_6"
+            android:text="数量"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/padding_6"
+            android:text="金额"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graydark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_present_dish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/present_1"
+                android:gravity="center"
+                android:padding="@dimen/padding_6"
+                android:text="赠菜"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_14"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graydark"/>
+
+            <TextView
+                android:id="@+id/tv_print_kitchen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/print"
+                android:gravity="center"
+                android:padding="@dimen/padding_6"
+                android:text="落单厨打"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_14"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graydark"/>
+
+            <TextView
+                android:id="@+id/tv_cashier"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/cashier_1"
+                android:gravity="center"
+                android:padding="@dimen/padding_6"
+                android:text="收银结账"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_14"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graydark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_remind_dish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/remind_dish"
+                android:gravity="center"
+                android:padding="@dimen/padding_6"
+                android:text="催菜"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_14"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graydark"/>
+
+            <TextView
+                android:id="@+id/tv_print_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/xiaofeidilian"
+                android:gravity="center"
+                android:padding="@dimen/padding_6"
+                android:text="客单打印"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_14"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graydark"/>
+
+            <TextView
+                android:id="@+id/tv_add_dish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/dish_menu"
+                android:gravity="center"
+                android:padding="@dimen/padding_6"
+                android:text="加菜"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_14"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graydark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_retreat_dish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/retreat_dish"
+                android:gravity="center"
+                android:padding="@dimen/padding_6"
+                android:text="退菜"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_14"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graydark"/>
+
+            <TextView
+                android:id="@+id/tv_call_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/call_order"
+                android:gravity="center"
+                android:padding="@dimen/padding_6"
+                android:text="叫号"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_14"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graydark"/>
+
+            <TextView
+                android:id="@+id/tv_find_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/order_list"
+                android:gravity="center"
+                android:padding="@dimen/padding_6"
+                android:text="找单"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_14"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:layout_below="@+id/view1"
+        android:layout_above="@id/layout1"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

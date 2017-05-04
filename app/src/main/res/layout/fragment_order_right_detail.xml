@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/padding_12"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/padding_6"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_pre_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_6"
+            android:background="@android:color/transparent"
+            android:src="@drawable/pre_page"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_6"
+            android:paddingTop="@dimen/padding_6"
+            android:paddingBottom="@dimen/padding_6"
+            android:layout_gravity="center_vertical"
+            android:text="第"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/black90"/>
+
+        <TextView
+            android:id="@+id/tv_page_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_6"
+            android:paddingBottom="@dimen/padding_6"
+            android:layout_gravity="center_vertical"
+            android:text="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_20"
+            android:textColor="@color/dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/padding_6"
+            android:paddingBottom="@dimen/padding_6"
+            android:paddingTop="@dimen/padding_6"
+            android:layout_gravity="center_vertical"
+            android:text="页"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/black90"/>
+
+        <ImageButton
+            android:id="@+id/ib_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_6"
+            android:background="@android:color/transparent"
+            android:src="@drawable/next_page"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_root_layout"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:paddingLeft="@dimen/padding_8"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_retreat_dish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            style="@style/CheckBoxCustom"
+            android:focusable="false"
+            android:clickable="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_dish_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="凉拌黄瓜"
+                android:textColor="@color/dark"/>
+
+            <TextView
+                android:id="@+id/tv_dish_extras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（规格，做法）"
+                android:textColor="@color/dark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_reduce_selector"/>
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="100"
+            android:minEms="4"
+            android:gravity="center"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/dark"/>
+
+        <ImageButton
+            android:id="@+id/ib_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_add_selector"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/tv_dish_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="￥15.0"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/dark"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/iv_can_discount"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="@dimen/padding_4"
+            android:src="@drawable/iv_discount"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

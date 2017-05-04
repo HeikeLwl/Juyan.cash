@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_root_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            style="@style/CheckBoxCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:padding="@dimen/padding_4"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"
+        android:text="项"
+        android:textColor="@color/dark"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"
+        android:text="客户姓名"
+        android:textColor="@color/dark"/>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"
+        android:text="手机号码"
+        android:textColor="@color/dark"/>
+
+    <TextView
+        android:id="@+id/tv_table"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"
+        android:text="预定桌位"
+        android:textColor="@color/dark"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"
+        android:text="就餐时间"
+        android:textColor="@color/dark"/>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"
+        android:text="就餐人数"
+        android:textColor="@color/dark"/>
+
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:padding="@dimen/padding_4"
+        android:text="来源"
+        android:textColor="@color/dark"/>
+
+    <TextView
+        android:id="@+id/tv_has_mark"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:text="查看"
+        android:gravity="center"
+        android:textColor="@color/blue"/>
+</LinearLayout>

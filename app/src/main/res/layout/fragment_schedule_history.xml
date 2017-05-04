@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="@dimen/padding_18"
+              android:layout_marginRight="@dimen/padding_18"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        android:padding="@dimen/padding_12">
+
+        <jufeng.juyancash.ui.customview.LCustomeRadioGroup
+            android:id="@+id/lcustomeradiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radiobutton_1"
+                style="@style/radioButton3"
+                android:background="@drawable/schedule_status_background_0"
+                android:checked="true"
+                android:text="待审核"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_2"
+                style="@style/radioButton3"
+                android:background="@drawable/schedule_status_background_1"
+                android:text="已生效"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_3"
+                style="@style/radioButton3"
+                android:background="@drawable/schedule_status_background_1"
+                android:text="已取消"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_4"
+                style="@style/radioButton3"
+                android:background="@drawable/schedule_status_background_2"
+                android:text="已完成"/>
+
+        </jufeng.juyancash.ui.customview.LCustomeRadioGroup>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>

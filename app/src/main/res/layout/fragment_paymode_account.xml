@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_6"
+        android:layout_gravity="center_horizontal"
+        android:text="挂账"
+        android:textSize="@dimen/font_18"
+        android:textColor="@color/dark"
+        android:layout_weight="0"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/padding_6"
+            android:paddingRight="@dimen/padding_6"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应收"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:id="@+id/tv_receivable_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="150.0"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/red"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_focus_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="挂账金额"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/dark"/>
+
+                <EditText
+                    android:id="@+id/et_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:text="150.0"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/red"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_account_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_4"
+                android:gravity="center_horizontal"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/in"
+                android:text="选择挂账单位"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/dark"/>
+
+            <TextView
+                android:id="@+id/tv_account_people"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_4"
+                android:gravity="center_horizontal"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/in"
+                android:text="选择挂账人"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/dark"/>
+
+            <TextView
+                android:id="@+id/tv_sign_people"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_4"
+                android:gravity="center_horizontal"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/in"
+                android:text="选择本店签字负责人"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/dark"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/layout_payment_bottom"/>
+
+</LinearLayout>

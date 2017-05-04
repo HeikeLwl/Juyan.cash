@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:background="@drawable/dialog_back_1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/dialog_back_0"
+            android:gravity="center"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_18"/>
+
+        <ImageButton
+            android:id="@+id/ib_cancle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/del"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/title"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_6"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_marginRight="@dimen/padding_6"
+            android:layout_below="@id/title"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/dark"
+                android:text="订单金额："/>
+
+            <TextView
+                android:id="@+id/tv_order_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_selector"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:textSize="@dimen/font_16"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_marginRight="@dimen/padding_6"
+            android:layout_marginTop="@dimen/padding_6"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark"
+                android:text="发票金额："/>
+
+            <EditText
+                android:id="@+id/et_invoice_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_selector"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:textSize="@dimen/font_16"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/layout_1"
+            android:layout_margin="@dimen/padding_12"
+            android:background="@drawable/red_button_selector"
+            android:text="开发票"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16"/>
+    </RelativeLayout>
+</RelativeLayout>

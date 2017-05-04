@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dialog_back_1"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/dialog_back_0"
+        android:gravity="center"
+        android:text="替换优惠券"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_20"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_margin="@dimen/padding_4"
+        android:padding="@dimen/padding_8"
+        android:text="优惠券券码："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_18"/>
+
+    <TextView
+        android:id="@+id/label_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label"
+        android:padding="@dimen/padding_8"
+        android:text="优惠券类型："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_18"/>
+
+    <TextView
+        android:id="@+id/label_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_0"
+        android:padding="@dimen/padding_8"
+        android:text="优惠券面值（单位：元）："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_18"/>
+
+    <TextView
+        android:id="@+id/label_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_1"
+        android:padding="@dimen/padding_8"
+        android:text="最低消费金额（单位：元）："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_18"/>
+
+    <TextView
+        android:id="@+id/label_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_2"
+        android:padding="@dimen/padding_8"
+        android:text="是否可与会员卡同时使用："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_18"/>
+
+    <TextView
+        android:id="@+id/label_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_3"
+        android:padding="@dimen/padding_8"
+        android:text="是否适用于不可打折的商品和套餐："
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_18"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/label"
+        android:background="@color/graydark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/padding_4"
+        android:layout_toRightOf="@id/label"
+        android:background="@color/gray"
+        android:orientation="horizontal">
+
+        <jufeng.juyancash.ui.customview.ClearEditText
+            android:id="@+id/et_coupon_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:hint="请扫描优惠券二维码或输入券码"
+            android:maxLines="1"
+            android:padding="@dimen/padding_8"
+            android:inputType="text"
+            android:digits="1234567890QWERTYUIOPASDFGHJKLZXCVBNM"
+            android:textColor="@color/reddark"
+            android:textSize="@dimen/font_16"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:paddingTop="@dimen/padding_8"
+            android:paddingBottom="@dimen/padding_8"
+            android:paddingLeft="@dimen/font_16"
+            android:paddingRight="@dimen/font_16"
+            android:src="@drawable/search_phone"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_coupon_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label"
+        android:layout_toRightOf="@id/label_0"
+        android:gravity="right"
+        android:padding="@dimen/padding_8"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/font_16"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_face_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_0"
+        android:layout_toRightOf="@id/label_1"
+        android:gravity="right"
+        android:padding="@dimen/padding_8"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/font_16"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_min_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_1"
+        android:layout_toRightOf="@id/label_2"
+        android:gravity="right"
+        android:padding="@dimen/padding_8"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/font_16"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_with_vip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_2"
+        android:layout_toRightOf="@id/label_3"
+        android:gravity="right"
+        android:padding="@dimen/padding_8"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/font_16"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_with_special_dish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_3"
+        android:layout_toRightOf="@id/label_4"
+        android:gravity="right"
+        android:padding="@dimen/padding_8"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/font_16"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_coupon_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="@dimen/padding_4"
+            android:drawableTop="@drawable/no"
+            android:gravity="center"
+            android:padding="@dimen/padding_6"
+            android:text="关闭"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/graydark"/>
+
+        <TextView
+            android:id="@+id/tv_coupon_cancel_change"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="@dimen/padding_4"
+            android:drawableTop="@drawable/cancel"
+            android:gravity="center"
+            android:padding="@dimen/padding_6"
+            android:text="取消替换"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/graydark"/>
+
+        <TextView
+            android:id="@+id/tv_coupon_confirm_change"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="@dimen/padding_4"
+            android:drawableTop="@drawable/yes"
+            android:gravity="center"
+            android:padding="@dimen/padding_6"
+            android:text="确认替换"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/layout"
+        android:background="@color/graydark"/>
+
+</RelativeLayout>

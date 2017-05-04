@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graydark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/no"
+            android:drawablePadding="@dimen/padding_4"
+            android:padding="@dimen/padding_4"
+            android:text="取消"
+            android:textSize="@dimen/font_14"
+            android:textColor="@color/dark"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/graydark"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="@dimen/padding_4"
+            android:drawableTop="@drawable/yes"
+            android:padding="@dimen/padding_4"
+            android:text="确认"
+            android:textSize="@dimen/font_14"
+            android:textColor="@color/dark"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/graydark"/>
+
+        <TextView
+            android:id="@+id/tv_change_vip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="@dimen/padding_4"
+            android:drawableTop="@drawable/change_vip"
+            android:padding="@dimen/padding_4"
+            android:text="更换会员"
+            android:textSize="@dimen/font_14"
+            android:textColor="@color/dark"/>
+
+    </LinearLayout>
+
+</LinearLayout>

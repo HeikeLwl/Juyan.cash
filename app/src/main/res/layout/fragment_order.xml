@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/containerleft"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/padding_6"
+        android:layout_weight="1"
+        android:background="@drawable/layout_background_0"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:padding="@dimen/padding_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <jufeng.juyancash.ui.customview.LCustomeRadioGroup
+                android:id="@+id/lcustomeradiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0"
+                android:padding="@dimen/padding_6">
+
+                <RadioButton
+                    android:id="@+id/radiobutton_1"
+                    style="@style/radioButton3"
+                    android:background="@drawable/schedule_status_background_0"
+                    android:checked="true"
+                    android:text="账单明细"/>
+
+                <RadioButton
+                    android:id="@+id/radiobutton_2"
+                    style="@style/radioButton3"
+                    android:background="@drawable/schedule_status_background_1"
+                    android:text="帐单汇总"/>
+
+                <RadioButton
+                    android:id="@+id/radiobutton_3"
+                    style="@style/radioButton3"
+                    android:background="@drawable/schedule_status_background_2"
+                    android:text="销售统计"/>
+
+            </jufeng.juyancash.ui.customview.LCustomeRadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="0"
+                android:background="@color/graydark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxEms="6"
+                        android:minEms="6"
+                        android:text="收银员"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_16"/>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_cashier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:spinnerMode="dropdown"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxEms="6"
+                        android:minEms="6"
+                        android:text="交接班状态"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_16"/>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_shift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:spinnerMode="dropdown"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxEms="6"
+                        android:minEms="6"
+                        android:text="付款方式"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_16"/>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_paymode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:spinnerMode="dropdown"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxEms="6"
+                        android:minEms="6"
+                        android:text="日期"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_16"/>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:spinnerMode="dropdown"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/padding_4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxEms="6"
+                        android:minEms="6"
+                        android:text="客单分类"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_16"/>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:spinnerMode="dropdown"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<FrameLayout-->
+                <!--android:id="@+id/containerright"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:padding="@dimen/padding_6"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/padding_12"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_page_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="0"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_6">
+
+                    <ImageButton
+                        android:id="@+id/ib_pre_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:padding="@dimen/padding_6"
+                        android:src="@drawable/pre_page"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="@dimen/padding_6"
+                        android:paddingLeft="@dimen/padding_6"
+                        android:paddingTop="@dimen/padding_6"
+                        android:text="第"
+                        android:textColor="@color/black90"
+                        android:textSize="@dimen/font_16"/>
+
+                    <TextView
+                        android:id="@+id/tv_page_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="@dimen/padding_6"
+                        android:paddingTop="@dimen/padding_6"
+                        android:text="1"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_20"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="@dimen/padding_6"
+                        android:paddingRight="@dimen/padding_6"
+                        android:paddingTop="@dimen/padding_6"
+                        android:text="页"
+                        android:textColor="@color/black90"
+                        android:textSize="@dimen/font_16"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_next_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:padding="@dimen/padding_6"
+                        android:src="@drawable/next_page"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

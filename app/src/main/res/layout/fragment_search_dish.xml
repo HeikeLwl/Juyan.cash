@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_6"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back"
+            android:text="返回菜单"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/dark"/>
+
+        <jufeng.juyancash.ui.customview.ClearEditText
+            android:id="@+id/et_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_18"
+            android:background="@drawable/edittext_focus_background"
+            android:drawableLeft="@drawable/search_dish"
+            android:drawablePadding="@dimen/padding_6"
+            android:hint="请输入搜索内容"
+            android:maxLines="1"
+            android:minEms="12"
+            android:padding="@dimen/padding_8"
+            android:textColor="@color/dark"
+            android:textColorHint="@color/mdtp_transparent_black"/>
+
+        <jufeng.juyancash.ui.customview.LCustomeRadioGroup
+            android:id="@+id/lcustomeradiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_12"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_normal_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RadioButtonCustom"
+                android:checked="true"
+                android:padding="@dimen/dp_6"
+                android:text="搜索普通菜品"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_16"/>
+
+            <RadioButton
+                android:id="@+id/rb_taocan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RadioButtonCustom"
+                android:layout_marginLeft="@dimen/padding_8"
+                android:padding="@dimen/dp_6"
+                android:text="搜索套餐"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_16"/>
+
+        </jufeng.juyancash.ui.customview.LCustomeRadioGroup>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/padding_8"/>
+
+    <jufeng.juyancash.ui.customview.MyKeyboardView1
+        android:id="@+id/ching_keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:layout_marginBottom="@dimen/padding_6"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@android:color/transparent"
+        android:keyPreviewLayout="@layout/preview_background"
+        android:keyTextColor="@color/white"/>
+
+</LinearLayout>

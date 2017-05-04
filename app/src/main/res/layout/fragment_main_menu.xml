@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/theme_0_red_0"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_4">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/photo"/>
+
+    </LinearLayout>
+
+    <jufeng.juyancash.ui.customview.LCustomeRadioGroup
+        android:id="@+id/lcustomeradiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radiobutton_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/a1_copy"
+                android:checked="true"
+                android:padding="@dimen/padding_8"
+                android:gravity="center_horizontal"
+                android:text="堂食"
+                android:textColor="@color/red_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/tv_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/unread_msg_count_background"
+                android:text="2"
+                android:textColor="@color/red"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radiobutton_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/a2"
+                android:padding="@dimen/padding_8"
+                android:gravity="center_horizontal"
+                android:text="预定"
+                android:textColor="@color/red_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/unread_msg_count_background"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:minEms="2"
+                android:textColor="@color/red"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radiobutton_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/a3"
+                android:padding="@dimen/padding_8"
+                android:gravity="center_horizontal"
+                android:text="排号"
+                android:textColor="@color/red_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/unread_msg_count_background"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:minEms="2"
+                android:text="1"
+                android:textColor="@color/red"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radiobutton_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/a4"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_8"
+                android:text="外卖"
+                android:textColor="@color/red_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/unread_msg_count_background"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:minEms="2"
+                android:text="1"
+                android:textColor="@color/red"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radiobutton_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/a5"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_8"
+                android:text="估清"
+                android:textColor="@color/red_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/unread_msg_count_background"
+                android:text="1"
+                android:textColor="@color/red"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/unread_msg_count_background"
+                android:text="1"
+                android:textColor="@color/red"
+                android:visibility="gone"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/a6"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_8"
+                android:text="订单"
+                android:textColor="@color/red_textcolor_selector"
+                android:textSize="@dimen/font_16"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tv_5"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radiobutton_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/a7"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_8"
+                android:text="消息"
+                android:textColor="@color/red_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/unread_msg_count_background"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:minEms="2"
+                android:text="1"
+                android:textColor="@color/red"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radiobutton_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/a8"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_8"
+                android:text="交班"
+                android:textColor="@color/red_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/tv_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/unread_msg_count_background"
+                android:text="1"
+                android:textColor="@color/red"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radiobutton_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/a9"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_8"
+                android:text="厨打"
+                android:textColor="@color/red_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/tv_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/unread_msg_count_background"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:minEms="2"
+                android:text="1"
+                android:textColor="@color/red"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radiobutton_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/a10"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_8"
+                android:text="更多"
+                android:textColor="@color/red_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/tv_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/unread_msg_count_background"
+                android:text="1"
+                android:textColor="@color/red"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </jufeng.juyancash.ui.customview.LCustomeRadioGroup>
+
+</LinearLayout>

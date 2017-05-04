@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/schedule_grid_head"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:paddingBottom="@dimen/padding_8">
+
+        <Button
+            android:id="@+id/btn_cancle_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_button_selector"
+            android:paddingLeft="@dimen/padding_8"
+            android:paddingRight="@dimen/padding_8"
+            android:text="取消订单"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_confirm_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_12"
+            android:background="@drawable/blue_button_selector"
+            android:paddingLeft="@dimen/padding_8"
+            android:paddingRight="@dimen/padding_8"
+            android:text="到店确认"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="方案打折"
+        android:textSize="@dimen/font_18"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/padding_4"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graydark"/>
+
+    <LinearLayout
+        android:id="@+id/layout_discount_scheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_4"
+        android:background="@drawable/edittext_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_4"
+            android:text="打折方案"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/dark"/>
+
+        <TextView
+            android:id="@+id/tv_discount_scheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_4"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/transparent"
+            android:drawableRight="@drawable/in"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_discount_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_4"
+        android:background="@drawable/edittext_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_4"
+            android:text="原因"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/dark"/>
+
+        <TextView
+            android:id="@+id/tv_discount_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_4"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_16"
+            android:gravity="right"
+            android:textColor="@color/transparent"
+            android:drawableRight="@drawable/in"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <include layout="@layout/layout_payment_bottom"/>
+
+</LinearLayout>

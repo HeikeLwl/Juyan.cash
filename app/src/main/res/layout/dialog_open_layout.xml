@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_back_0">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/textStyleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大厅2号桌"/>
+
+            <ImageButton
+                android:id="@+id/ib_cancle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/padding_8"
+                android:scaleType="centerCrop"
+                android:src="@drawable/del"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="就餐人数："/>
+
+                <EditText
+                    android:id="@+id/et_people_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:background="@drawable/edittext_selector"
+                    android:inputType="number"
+                    android:textSize="@dimen/font_16"
+                    android:hint="请输入人数（可填）"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="服务员："/>
+
+                <!--<EditText-->
+                    <!--android:id="@+id/et_waiter"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:lines="1"-->
+                    <!--android:textSize="@dimen/font_16"-->
+                    <!--android:hint="请选择服务员（可选）"-->
+                    <!--android:background="@drawable/edittext_selector"/>-->
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_6"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="备注："/>
+
+                <EditText
+                    android:id="@+id/et_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="填写备注信息（可填）"
+                    android:textSize="@dimen/font_16"
+                    android:background="@drawable/edittext_selector"
+                    android:gravity="top"
+                    android:lines="2"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_12"
+                android:layout_gravity="center_horizontal"
+                android:text="开台"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_16"
+                android:background="@drawable/red_button_selector"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

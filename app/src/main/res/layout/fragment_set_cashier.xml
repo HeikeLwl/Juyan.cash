@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/padding_6"
+        android:text="设置副收银同步密码"
+        android:textSize="@dimen/font_18"
+        android:textColor="@color/dark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/dark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_12"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/padding_6"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/dark"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/padding_6"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="同步密码："
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/dark"/>
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_4"
+                android:inputType="number"
+                android:background="@drawable/edittext_focus_background"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/dark"
+                android:text="8888"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/padding_12"
+            android:background="@drawable/red_button_selector"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16"/>
+
+    </LinearLayout>
+
+</LinearLayout>

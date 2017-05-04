@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_back_1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dialog_back_0"
+            android:gravity="center"
+            android:text="大厅2号桌"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_18"/>
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="@dimen/padding_8"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_16"/>
+
+        <ImageButton
+            android:id="@+id/ib_cancle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:padding="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/del"/>
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_margin="@dimen/padding_6"
+            android:layout_gravity="center_vertical"
+            android:text="选择订单："
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_16"/>
+
+        <jufeng.juyancash.ui.customview.FlowRadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_6"
+            android:layout_below="@id/title"
+            android:layout_toRightOf="@id/tv_label"
+            android:background="@drawable/gray_cornor_background_2"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radiogroup"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_6"
+            android:padding="@dimen/padding_6">
+
+            <TextView
+                android:id="@+id/tv_meal_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/tv_table_spend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_12"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/tv_meal_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_12"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_marginRight="@dimen/padding_6"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_12"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_order"
+                style="@style/btnStyleNormal"
+                android:text="点餐"/>
+
+            <Button
+                android:id="@+id/btn_present_dish"
+                style="@style/btnStyleNormal"
+                android:text="赠菜"/>
+
+            <Button
+                android:id="@+id/btn_retreat_dish"
+                style="@style/btnStyleNormal"
+                android:text="退菜"/>
+
+            <Button
+                android:id="@+id/btn_remind_dish"
+                style="@style/btnStyleNormal"
+                android:text="催菜"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_1"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_marginRight="@dimen/padding_6"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_replace_table"
+                style="@style/btnStyleNormal"
+                android:text="更换桌位"/>
+
+            <Button
+                android:id="@+id/btn_jointtable"
+                style="@style/btnStyleNormal"
+                android:text="合台"/>
+
+            <Button
+                android:id="@+id/btn_cancle_join_table"
+                style="@style/btnStyleNormal"
+                android:text="取消合台"
+                android:visibility="gone"/>
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_andtable"-->
+            <!--style="@style/btnStyleNormal"-->
+            <!--android:text="并单"/>-->
+
+            <Button
+                android:id="@+id/btn_openagain"
+                style="@style/btnStyleNormal"
+                android:text="再开一单"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_2"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_marginRight="@dimen/padding_6"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancle_table"
+                style="@style/btnStyleNormal"
+                android:text="取消开台"/>
+
+            <Button
+                android:id="@+id/btn_schedule"
+                style="@style/btnStyleNormal"
+                android:text="预定"/>
+
+            <Button
+                android:id="@+id/btn_schedule_history"
+                style="@style/btnStyleNormal"
+                android:text="预定记录"/>
+
+            <Button
+                android:id="@+id/btn_cashier"
+                style="@style/btnStyleNormal"
+                android:text="收银系统"/>
+
+        </LinearLayout>
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_cancle_join_order"-->
+        <!--android:layout_width="match_parent"-->
+        <!--style="@style/btnStyleNormal"-->
+        <!--android:visibility="gone"-->
+        <!--android:text="取消并单"/>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

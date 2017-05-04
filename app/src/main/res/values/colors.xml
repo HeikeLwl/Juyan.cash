@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mdtp_white">#ffffff</color>
+    <color name="mdtp_background_color">@color/mdtp_white</color>
+    <color name="mdtp_circle_background">@color/mdtp_background_color</color>
+    <color name="mdtp_circle_color">#f5f5f5</color>
+    <color name="mdtp_ampm_text_color">@color/mdtp_numbers_text_color</color>
+    <color name="mdtp_numbers_text_color">#ff212121</color>
+
+    <color name="mdtp_transparent_black">#7f000000</color>
+    <color name="mdtp_accent_color">#e96161</color>
+    <color name="mdtp_accent_color_focused">#76ffffff</color>
+    <color name="mdtp_accent_color_dark">#f55151</color>
+    <color name="mdtp_date_picker_text_normal">#ff212121</color>
+    <color name="mdtp_date_picker_text_highlighted">@color/mdtp_date_picker_text_normal</color>
+    <color name="mdtp_date_picker_text_disabled">#ccc</color>
+    <color name="mdtp_date_picker_month_day">#767676</color>
+
+    <!-- DatePicker Dark Theme -->
+    <color name="mdtp_date_picker_view_animator_dark_theme">@color/mdtp_light_gray</color>
+    <color name="mdtp_date_picker_text_normal_dark_theme">@color/mdtp_white</color>
+    <color name="mdtp_date_picker_month_day_dark_theme">#b4b4b4</color>
+    <color name="mdtp_date_picker_text_disabled_dark_theme">#767676</color>
+    <color name="mdtp_date_picker_text_highlighted_dark_theme">@color/mdtp_date_picker_text_normal_dark_theme</color>
+
+    <color name="mdtp_date_picker_view_animator">@android:color/white</color>
+
+    <color name="mdtp_button_color">@color/mdtp_accent_color</color>
+    <color name="mdtp_button_selected">#33969696</color>
+
+    <!-- TimePicker Dark Theme -->
+    <color name="mdtp_circle_background_dark_theme">#525252</color>
+    <color name="gray_0">#475663</color>
+    <color name="gray_1">#a0a0a1</color>
+    <!-- Colors for red theme -->
+    <color name="mdtp_red">@color/mdtp_accent_color</color>
+    <color name="mdtp_light_gray">#424242</color>
+    <color name="colorPrimary">#fefefe</color>
+    <color name="colorPrimaryDark">#db4343</color>
+    <color name="colorAccent">#e96161</color>
+    <color name="activityBackground">#e6e6dc</color>
+    <color name="white">#ffffff</color>
+    <color name="dark">#333333</color>
+    <color name="black90">#90000000</color>
+    <color name="gray">#eeeeee</color>
+    <color name="gray1">#dedede</color>
+    <color name="graydark">#cccccc</color>
+    <color name="transparent">#90333333</color>
+    <color name="red">#ff5e48</color>
+    <color name="reddark">#ec4a34</color>
+    <color name="red1">#ff4d35</color>
+    <color name="reddark1">#ea381f</color>
+    <color name="yellow">#f5d07a</color>
+    <color name="orange">#ad8976</color>
+    <color name="orangedark">#a9806a</color>
+    <color name="blue">#004f5c</color>
+    <color name="bluedark">#002228</color>
+    <color name="bluelight">#FF3E85EC</color>
+    <color name="green">#97adac</color>
+    <color name="greendark">#7a9493</color>
+    <color name="greenlight">#349005</color>
+    <color name="purple">#ffaa66cc</color>
+    <color name="grid_content_odd">#cccfd4</color>
+    <color name="grid_content_even">#ffffff</color>
+    <color name="white_transparent">#70ffffff</color>
+    <color name="gray_transparent">#70dddddd</color>
+
+    <!-- 主题1 -->
+    <color name="theme_0_red_0">#e96161</color>
+    <color name="theme_0_red_1">#f7e2cb</color>
+    <color name="dish_menu_back">#ededed</color>
+
+    <color name="login_red_left">#f0565a</color>
+    <color name="login_red_right">#c31617</color>
+</resources>

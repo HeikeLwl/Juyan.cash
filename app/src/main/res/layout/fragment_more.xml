@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <jufeng.juyancash.ui.customview.LCustomeRadioGroup
+            android:id="@+id/lcustomeradiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radiobutton_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_radio_button_selector"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/cashier"
+                android:gravity="center"
+                android:padding="@dimen/padding_16"
+                android:text="设置副收银"
+                android:textColor="@color/black_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_radio_button_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/vip_manage"
+                android:gravity="center"
+                android:padding="@dimen/padding_16"
+                android:text="会员管理"
+                android:textColor="@color/black_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_radio_button_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/data_manage"
+                android:gravity="center"
+                android:padding="@dimen/padding_16"
+                android:text="数据更新"
+                android:textColor="@color/black_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_radio_button_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/tech"
+                android:gravity="center"
+                android:padding="@dimen/padding_16"
+                android:text="技术支持"
+                android:textColor="@color/black_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_radio_button_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/about"
+                android:gravity="center"
+                android:padding="@dimen/padding_16"
+                android:text="关于聚焱"
+                android:textColor="@color/black_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_radio_button_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/version"
+                android:gravity="center"
+                android:padding="@dimen/padding_16"
+                android:text="版本更新"
+                android:textColor="@color/black_textcolor_selector"
+                android:textSize="@dimen/font_16"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+        </jufeng.juyancash.ui.customview.LCustomeRadioGroup>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/gray"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_weight="0"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_over"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:paddingBottom="@dimen/padding_6"-->
+            <!--android:paddingTop="@dimen/padding_6"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:drawableTop="@drawable/logout"-->
+            <!--android:drawablePadding="@dimen/padding_4"-->
+            <!--android:background="@drawable/white_btn_selector"-->
+            <!--android:text="营业终了"-->
+            <!--android:textSize="@dimen/font_14"-->
+            <!--android:textColor="@color/dark"/>-->
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/gray"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_logout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/white_btn_selector"-->
+                <!--android:drawablePadding="@dimen/padding_6"-->
+                <!--android:drawableTop="@drawable/exit"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:paddingBottom="@dimen/padding_6"-->
+                <!--android:paddingTop="@dimen/padding_6"-->
+                <!--android:text="注销账号"-->
+                <!--android:textColor="@color/dark"-->
+                <!--android:textSize="@dimen/font_14"/>-->
+
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/containerright"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+    </FrameLayout>
+
+</LinearLayout>

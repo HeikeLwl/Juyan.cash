@@ -1,0 +1,197 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Label for button to confirm chosen date or time [CHAR LIMIT=30] -->
+    <string name="mdtp_ok">@android:string/ok</string>
+    <string name="mdtp_cancel">@android:string/cancel</string>
+    <!--
+         Content description for the hour selector in the time picker, which displays
+         selectable hours of the day along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <string name="mdtp_hour_picker_description">Hours circular slider</string>
+    <!--
+         Content description for the minute selector in the time picker, which displays
+         selectable five-minute intervals along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <string name="mdtp_minute_picker_description">Minutes circular slider</string>
+    <!-- Accessibility announcement for hour circular picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_hours">Select hours</string>
+    <!-- Accessibility announcement for minute circular picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_minutes">Select minutes</string>
+
+    <!--
+        Content description for the month and day selector in the date picker, which displays
+        a selectable grid of days laid out by month.
+        [CHAR LIMIT=50]
+     -->
+    <string name="mdtp_day_picker_description">Month grid of days</string>
+    <!--
+        Content description for the year selector in the date picker, which displays
+        a scrolling, vertical list of years.
+        [CHAR LIMIT=50]
+     -->
+    <string name="mdtp_year_picker_description">Year list</string>
+    <!-- Accessibility announcement for the day picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_day">Select month and day</string>
+    <!-- Accessibility announcement for the year picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_year">Select year</string>
+    <!-- Accessibility description for the item that is currently selected. -->
+    <string name="mdtp_item_is_selected"><xliff:g example="2013" id="item">%1$s</xliff:g> selected</string>
+    <!-- Accessibility announcement when a number that had been typed in is deleted [CHAR_LIMIT=NONE] -->
+    <string name="mdtp_deleted_key"><xliff:g example="4" id="key">%1$s</xliff:g> deleted</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_time_placeholder" translatable="false">--</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_time_separator" translatable="false">:</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_radial_numbers_typeface" translatable="false">sans-serif</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_sans_serif" translatable="false">sans-serif</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_day_of_week_label_typeface" translatable="false">sans-serif</string>
+    <string name="JUYANCASH_DIR_URL">/mnt/sdcard/juyancash_img</string>
+    <string name="JUYANCASH_IMG_URL">/mnt/sdcard/juyancash_img/store_logo.jpg</string>
+    <string name="APP_KEY">jfelevenwujf654123js</string>
+    <string name="MCH_ID">1348327501</string>
+    <string name="APPID">wx32f17019fa8d5f3c</string>
+    <string name="DEVELOPER_ID">100464</string>
+    <string name="MEITUAN_SIGN_KEY">cm7necuxa8nsgys7</string>
+    <string name="VERSION_ADDRESS">http://115.28.241.164:8080/upload/app/cash/JuYanCash.apk</string>
+    <string name="AD_LOCATION">http://114.215.41.194/jfeleven/oms/Operative/Advertise/index.html?partner_code=</string>
+    <string name="MEITUAN_HEARTBEAT">http://heartbeat.meituan.com/pos/heartbeat</string>
+    <string name="MEITUAN_HEARTBEAT_POS">http://heartbeat.meituan.com/data/pos</string>
+    
+    <string name="TEST">http://121.42.189.163/coral/test/testSMS.do</string>
+
+    <string name="PAY_QR">http://www.jfeleven.com/weixincenter/off/pay/go.do</string>
+    <string name="WX_ORDER_CONFIRM">http://121.42.189.163/weixincenter/mq/message/del.do</string>
+    <string name="MEITUAN_PREPARE">http://121.42.189.163/coral/meituan/coupon/prepare.do</string>
+    <string name="MEITUAN_CONSUME">http://121.42.189.163/coral/meituan/coupon/consume.do</string>
+    <string name="MEITUAN_CANCEL">http://121.42.189.163/coral/meituan/coupon/cancel.do</string>
+    <string name="VERSION_UPDATE">http://121.42.189.163/coral/version/findVersion.do</string>
+    <string name="LOGIN_URL">http://121.42.189.163/coral/login/login.do</string>
+    <string name="GET_TAKEOUT_BY_ID">http://121.42.189.163/weixincenter/order/getOrder.do</string>
+    <string name="GET_MEITUAN_TAKEOUT_ORDER">http://121.42.189.163/group/meituan/waimai/order/queryOrder.do</string>
+    <string name="CONFIRM_MEITUAN_TAKEOUT_ORDER">http://121.42.189.163/group/meituan/waimai/order/confirm.do</string>
+    <string name="CONFIRM_MEITUAN_ORDER">http://121.42.189.163/group/meituan/waimai/order/confirm.do</string>
+    <string name="CANCEL_MEITUAN_ORDER">http://121.42.189.163/group/meituan/waimai/order/cancel.do</string>
+    <string name="CHANGE_TAKEOUT_BY_ID">http://121.42.189.163/weixincenter/order/updateOrder2.do</string>
+    <string name="GET_CHING_LIST">http://121.42.189.163/coral/cashier/estimate/list.do</string>
+    <string name="ADD_CHING">http://121.42.189.163/coral/cashier/estimate/save.do</string>
+    <string name="DELETE_CHING">http://121.42.189.163/coral/cashier/estimate/delete.do</string>
+    <string name="DELETE_CHING_LIST">http://121.42.189.163/coral/cashier/estimate/clear.do</string>
+    <string name="QN_IMAGE_URL">http://o80svg5jt.bkt.clouddn.com/</string>
+    <string name="ARRANGE_DETAIL">http://121.42.189.163/weixincenter/restaurant/queue.do?method=user</string>
+    <string name="ARRANGE_CALL">http://121.42.189.163/weixincenter/restaurant/callNo.do</string>
+    <string name="ARRANGE_OVER">http://121.42.189.163/weixincenter/restaurant/queue.do?method=finish</string>
+    <string name="SCHEDULE_DETAIL">http://121.42.189.163/weixincenter/restaurant/reserve.do?method=user</string>
+    <string name="RETREAT_DISH">http://121.42.189.163/weixincenter/process/retreatGoods.do</string>
+    <string name="PRESENT_DISH">http://121.42.189.163/weixincenter/process/giveGoods.do</string>
+    <string name="ADD_DISH">http://121.42.189.163/weixincenter/process/addGoods.do</string>
+    <string name="DISCOUNT_PRICE">http://121.42.189.163/weixincenter/process/discount.do</string>
+    <string name="CHANGE_TABLE">http://121.42.189.163/weixincenter/process/changeDesk.do</string>
+    <string name="GET_ORDER">http://121.42.189.163/weixincenter/order/getOrder.do</string>
+    <string name="UPDATE_ORDER">http://121.42.189.163/weixincenter/order/updateOrder.do</string>
+    <string name="ELECTRIC_PAY">http://121.42.189.163/weixincenter/cmbcpay/tmpay.do</string>
+    <string name="CHECK_PAY">http://121.42.189.163/weixincenter/cmbcpay/queryPay.do</string>
+    <string name="REFUND_PAY">http://121.42.189.163/weixincenter/cmbcpay/refundPay.do</string>
+    <string name="REVOKE_PAY">http://121.42.189.163/weixincenter/cmbcpay/revokePay.do</string>
+    <string name="ALIPAY_INTERFACE">http://121.42.189.163/coral/pay/cash/alipay/trade.do</string>
+    <string name="VIP_QR_PAY">http://121.42.189.163/weixincenter/vip/card/scanpay.do</string>
+    <string name="REMIND_DISH">http://121.42.189.163/weixincenter/wxrestservice/findCallService.do</string>
+    <string name="BIND_VIP">http://121.42.189.163/weixincenter/cashier/vip/bind.do</string>
+    <string name="VIP_RECHARGE">http://121.42.189.163/weixincenter/cashier/vip/recharge.do</string>
+    <string name="VIP_RECHARGE_CHECK">http://121.42.189.163/weixincenter/cashier/vip/getVipRechargeState.do</string>
+    <string name="VIP_CONFIRM_RECHARGE">http://121.42.189.163/weixincenter/cashier/vip/viprec.do</string>
+    <string name="UPLOAD_SHOPDATA">http://121.42.189.163/coral/order/save.do</string>
+    <string name="GET_RECHARGE_TICKET">http://121.42.189.163/weixincenter/ticket/vipRecTicket.do</string>
+    <string name="RETURN_ORDER">http://121.42.189.163/coral/order/checkout.do</string>
+    <string name="SCHEDULE_UPDATE">http://121.42.189.163/weixincenter/restaurant/reserve.do?method=update</string>
+    <string name="GET_VIP_MONEY">http://121.42.189.163/weixincenter/vip/card/getByVipNo.do</string>
+    <string name="SYNC_ALL_DATA">http://121.42.189.163/coral/synchro/lists.do</string>
+    <string name="VIP_CARD_DETAIL1">http://121.42.189.163/weixincenter/vip/card/getByVipNoAndMobile.do</string>
+    <string name="CHANGE_VIP_SCORE">http://121.42.189.163/weixincenter/vip/card/addscore.do</string>
+    <string name="CHANGE_VIP_CARD">http://121.42.189.163/weixincenter/process/changeVipCard.do</string>
+    <string name="VIP_CARD_RETREAT">http://121.42.189.163/weixincenter/order/vipRefund.do</string>
+    <string name="CHANGE_VOUCHER_STATUS">http://121.42.189.163/weixincenter/cashier/coupon/updateIsUseById.do</string>
+    <string name="WXORDER_OVER">http://121.42.189.163/weixincenter/order/syncOrder.do</string>
+    <string name="WXORDER_CANCLE">http://121.42.189.163/weixincenter/restaurant/orderUpdate.do</string>
+    <string name="BUSINESS_OVER">http://121.42.189.163/coral/cashier/end/save.do</string>
+    <string name="SCHEDULE_NOTICE">http://121.42.189.163/weixincenter/wxyuding/mobileOrderNotice</string>
+    <string name="UPLOAD_STOCK">http://121.42.189.163/coral/inventory/sycnGoodsStock.do</string>
+    <string name="REFRESH_STOCK">http://121.42.189.163/coral/synchro/goods/stock.do</string>
+    <string name="FIND_COUPON">http://121.42.189.163/weixincenter/offcoupon/findCoupon.do</string>
+    <string name="USE_COUPON">http://121.42.189.163/weixincenter/offcoupon/update.do</string>
+    <string name="FIND_ORDER">http://121.42.189.163/coral/order/existOrder.do</string>
+    <string name="CHANGE_STORE_VERSION">http://121.42.189.163/coral/cashier/version/update.do</string>
+    <string name="GET_STORE_VERSION">http://121.42.189.163/coral/cashier/version/getCashierVersion.do</string>
+    <string name="SEND_TAKEOUT_MSG">http://121.42.189.163/coral/takeout/person/sms/dispatching.do</string>
+    <string name="GET_PAY_REQ_MSG_ID">http://121.42.189.163/weixincenter/cmbcpay/getReqMsgId.do</string>
+    <string name="CANCEL_MEITUAN_TAKEOUT_ORDER">http://121.42.189.163/group/meituan/waimai/order/cancel.do</string>
+    <string name="MEITUAN_DELIVER_STORE">http://121.42.189.163/group/meituan/waimai/order/delivering.do</string>
+    <string name="MEITUAN_DELIVER_STORE_OVER">http://121.42.189.163/group/meituan/waimai/order/delivered.do</string>
+    <string name="MEITUAN_DELIVER_SELF">http://121.42.189.163/group/meituan/waimai/order/dispatchShip.do</string>
+    <string name="MEITUAN_DELIVER_THIRD_CHECK_MONEY">http://121.42.189.163/group/meituan/waimai/order/queryZbShippingFee.do</string>
+
+    <string name="app_name">聚焱收银</string>
+
+    <string name="login_str">提示：店家登录时需要连接互联网，登录成功后会对收银机进行安全验证，并同步后台设置数据。</string>
+
+    <string name="update_str0">将您在聚焱后台上添加或修改的最新设置信息（如：商品、员工、桌位等）更新到这台设备。每次系统启动时会自动更新一次设置数据。</string>
+    <string name="update_str1">将这台设备上的营业数据上传到聚焱云服务器，并生成营业报表，您可以使用聚焱后台来了解营业状况。</string>
+    <string name="about_str0">厦门聚蜂信息科技有限公司是一家集智能化餐饮管理系统软硬件研发、制造、销售以及售后服务为一体化的互联网高技术型企业，拥有着一流的设计开发团队以及完善的产品运营服务架构，同时在互联网核心业务领域具有丰富的行业经验。我们将致力于为餐饮行业从业者提供多形态、全方位、具有创新性及专业高品质的一体化餐饮管理系统。聚蜂旗下的聚焱智慧餐饮系统，通过全新的互联网科技手段以及配套的硬件设施，有效提升了餐饮商户在餐饮行业的核心竞争力，降低其整体管理成本，提升其市场拓展能力，促进其在餐饮行业的更大发展。
+</string>
+    <string name="about_str1">发展目标：成为具有影响力的餐饮行业互联网拓展解决方案供应商。\n企业使命：帮助餐饮企业在互联网时代寻求突破和发展。\n经营理念：以专业为力量，以质朴为初心，以创新为发展，以服务为宗旨\n企业形象：专业，创新，努力。
+</string>
+    <string name="about_str2">多形态、全方位餐饮管理解决方案提供者，聚蜂打造的聚焱智能餐饮软硬件一体化管理系统，是聚蜂致力于为餐饮行业从业者提供具有创新性以及专业高品质的一款全新产品，通过全新的互联网模式以及配套的硬件设施提升其餐厅在餐饮行业的核心竞争力，降低整体管理成本，提升市场拓展能力，促进其在餐饮行业的更大发展。
+</string>
+    <string name="about_str3">详情访问：<font color="blue">www.jfeleven.com</font></string>
+    <string name="tec_str0"><font color="black" size="20">常见问题</font>\n<font color="gray" size="16">产品安装使用的常见问题与回答，使用聚焱产品前请先阅读这些内容</font></string>
+    <string name="tec_str1"><font color="black" size="20">交流社区</font>\n<font color="gray" size="16">阅读试用文章，发表问题，了解新产品发布或提交软件错误等</font></string>
+    <string name="tec_str2"><font color="black" size="20">支持邮箱</font>\n<font color="gray" size="16">问题、建议或合作请发邮件至</font><font color="blue" size="16">support@jfeleven.com</font></string>
+    <string name="tec_str3"><font color="black" size="20">官方网站</font>\n<font color="gray" size="16">更多聚焱产品信息，请访问</font><font color="blue" size="16">www.jfeleven.com</font></string>
+
+    <string name="version_desc">
+        <font color="black" size="16">2016-12-14修复：</font>\n
+        <font color="gray" size="16">1、库存管理；</font>\n
+        <font color="gray" size="16">2、会员消费(未完结）；</font>\n
+        <font color="gray" size="16">3、优惠券(未完结）；</font>\n
+        <font color="gray" size="16">4、到点点餐状态修改(未完结）；</font>\n
+        <font color="gray" size="16">5、团购券添加选择数量(未完结）；</font>\n
+        <font color="gray" size="16">6、消息模块调整；</font>\n
+        <font color="gray" size="16">7、订单中显示退菜明细；</font>\n
+        <font color="gray" size="16">8、外卖各个状态添加打印；</font>\n
+        <font color="gray" size="16">9、营业终了后锁定订单；</font>\n
+        <font color="black" size="16">2016-12-12修复：</font>\n
+        <font color="gray" size="16">1、打印单菜品单位问题；</font>\n
+        <font color="gray" size="16">2、套餐打印调整；</font>\n
+        <font color="gray" size="16">3、赠菜、退菜、催菜打印混乱问题；</font>\n
+        <font color="black" size="16">2016-12-09修复：</font>\n
+        <font color="gray" size="16">1、收银打印模块调整（未完成）；</font>\n
+        <font color="gray" size="16">2、套餐打印调整（未完成）；</font>\n
+        <font color="gray" size="16">3、解决套餐点餐跳回顶部的问题；</font>\n
+        <font color="gray" size="16">4、客显同步滚动的问题；</font>\n
+        <font color="gray" size="16">5、客显以网页形式展示；</font>\n
+        <font color="black" size="16">2016-12-01修复：</font>\n
+        <font color="gray" size="16">1、加菜打印单已修改标题为‘加菜单’；</font>\n
+        <font color="gray" size="16">2、点菜下单时菜品已合并；</font>\n
+        <font color="gray" size="16">3、点餐时添加搜索菜品；（未完结）</font>\n
+        <font color="gray" size="16">4、消息模块优化；（未完结）</font>\n
+        <font color="gray" size="16">5、订单统计修复收银员筛选无效的问题；</font>\n
+        <font color="gray" size="16">6、添加上传营业数据；</font>\n
+        <font color="gray" size="16">7、收银打印模块调整（未完成）；</font>\n
+        <font color="gray" size="16">8、优化同一张桌多单的显示；</font>\n
+        <font color="gray" size="16">9、添加营业终了；</font>\n
+        <font color="gray" size="16">10、套餐打印调整（未完结）；</font>\n
+        <font color="black" size="16">2016-11-30修复：</font>\n
+        <font color="gray" size="16">1、套餐内商品厨打与非套餐商品厨打已区别开；</font>\n
+        <font color="gray" size="16">2、催菜退菜结账打印已添加；</font>\n
+        <font color="gray" size="16">3、微信支付优化；</font>\n
+        <font color="gray" size="16">4、会员充值优化；</font>\n
+        <font color="gray" size="16">5、收银系统的清空所有修复，不支持支付宝、微信、会员卡已支付记录的清除;</font>\n
+        <font color="gray" size="16">6、修复账单统计数据；</font></string>
+</resources>

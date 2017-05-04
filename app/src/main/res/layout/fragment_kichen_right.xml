@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/activityBackground"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <jufeng.juyancash.ui.customview.LCustomeRadioGroup
+            android:id="@+id/lcustomeradiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="@dimen/padding_4">
+
+            <RadioButton
+                android:id="@+id/radiobutton_1"
+                style="@style/radioButton3"
+                android:background="@drawable/schedule_status_background_0"
+                android:checked="true"
+                android:text="已打印"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_2"
+                style="@style/radioButton3"
+                android:background="@drawable/schedule_status_background_2"
+                android:text="未打印"/>
+
+        </jufeng.juyancash.ui.customview.LCustomeRadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/padding_4"
+            android:text="厨打单据列表"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_18"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_12">
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_button_selector"
+            android:text="清空"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16"/>
+
+        <Button
+            android:id="@+id/btn_print_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_12"
+            android:background="@drawable/blue_button_selector"
+            android:text="补打"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16"/>
+
+    </LinearLayout>
+
+</LinearLayout>

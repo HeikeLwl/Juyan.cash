@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="300dp"
+              android:layout_marginBottom="@dimen/padding_6"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="@dimen/padding_6">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/tv_dish_name"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center_vertical"
+            android:maxEms="16"
+            android:maxLines="1"
+            android:minEms="8"
+            android:text="菜名"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_16"/>
+
+        <TextView
+            android:id="@+id/tv_dish_price"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@id/tv_dish_name"
+            android:gravity="center_vertical"
+            android:text="￥15.0/份"
+            android:textColor="@color/bluelight"
+            android:textSize="@dimen/font_14"/>
+
+        <ImageButton
+            android:id="@+id/ib_confirm"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/padding_6"
+            android:src="@drawable/yes"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graydark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/padding_6"
+            android:paddingTop="@dimen/padding_6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="数量："
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_16"/>
+
+                <EditText
+                    android:id="@+id/et_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/edittext_background_0"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_6"
+                    android:textColor="@color/reddark"
+                    android:textSize="@dimen/font_16"/>
+
+            </LinearLayout>
+
+            <jufeng.juyancash.ui.customview.MyKeyboardView3
+                android:id="@+id/keyboard_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/padding_4"
+                android:layout_weight="0"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:keyBackground="@android:color/transparent"
+                android:keyPreviewLayout="@layout/preview_background"
+                android:keyTextColor="@color/white"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/graydark"/>
+
+        <LinearLayout
+            android:id="@+id/layout_material"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="促销方案："
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_16"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinner_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:layout_margin="@dimen/padding_4"
+                    android:spinnerMode="dropdown"/>
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/graydark"/>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加料："
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_16"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_4"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/graydark"/>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_gg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="规格："
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_16"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_gg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_4"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/graydark"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_zf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="做法："
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_16"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_zf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_4"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/graydark"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="备注："
+                            android:textColor="@color/dark"
+                            android:textSize="@dimen/font_16"/>
+
+                        <TextView
+                            android:id="@+id/tv_note"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding_4"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/edittext_background"
+                            android:minWidth="100dp"
+                            android:hint="自定义备注"
+                            android:textSize="@dimen/font_14"
+                            android:textColor="@color/dark"/>
+
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_mark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_4"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

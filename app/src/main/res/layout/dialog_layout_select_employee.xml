@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_back_1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/dialog_back_0"
+            android:padding="@dimen/padding_6"
+            android:text="选择送餐员"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_20"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="送餐员名称"
+            android:textColorHint="@color/black90"
+            android:inputType="phone"
+            android:enabled="false"
+            android:padding="@dimen/padding_6"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_marginTop="@dimen/padding_6"
+            android:layout_marginRight="@dimen/padding_6"
+            android:background="@color/gray"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="送餐员手机号"
+            android:enabled="false"
+            android:textColorHint="@color/black90"
+            android:inputType="phone"
+            android:padding="@dimen/padding_6"
+            android:layout_margin="@dimen/padding_6"
+            android:background="@color/gray"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graydark"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graydark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_6"
+                android:text="不启用送餐员"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/bluedark"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graydark"/>
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_6"
+                android:text="启用送餐员"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/reddark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_6"
+        android:layout_gravity="center_horizontal"
+        android:text="团购"
+        android:textSize="@dimen/font_18"
+        android:textColor="@color/dark"
+        android:layout_weight="0"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/padding_4"
+            android:paddingRight="@dimen/padding_4"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应收"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:id="@+id/tv_receivable_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="150.0"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/red"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实收"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:id="@+id/tv_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="150.0"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/red"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_groupon_taocan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_6"
+                android:gravity="center_horizontal"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/in"
+                android:text="选择团购套餐"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/dark"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_6"
+                android:background="@drawable/edittext_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="数量"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/dark"/>
+
+                <EditText
+                    android:id="@+id/et_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/red"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_coupon_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_4"
+                android:background="@drawable/edittext_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="券码"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/dark"/>
+
+                <EditText
+                    android:id="@+id/et_coupon_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/red"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/layout_payment_bottom"/>
+
+</LinearLayout>

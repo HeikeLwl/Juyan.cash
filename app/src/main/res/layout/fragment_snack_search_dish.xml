@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_6">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back"
+            android:gravity="center"
+            android:text="返回菜单"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/font_14"/>
+
+        <jufeng.juyancash.ui.customview.ClearEditText
+            android:id="@+id/et_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_background"
+            android:drawableLeft="@drawable/search_gray"
+            android:drawablePadding="@dimen/padding_6"
+            android:hint="请输入搜索内容"
+            android:maxLines="1"
+            android:minEms="8"
+            android:padding="@dimen/padding_6"
+            android:textColor="@color/theme_0_red_0"
+            android:textSize="@dimen/dp_14"
+            android:textColorHint="@color/graydark"/>
+
+        <jufeng.juyancash.ui.customview.LCustomeRadioGroup
+            android:id="@+id/lcustomeradiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/font_12"
+            android:layout_toRightOf="@id/et_search"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_normal_dish"
+                style="@style/RadioButtonCustomSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:checked="true"
+                android:paddingLeft="@dimen/padding_6"
+                android:text="搜索普通菜品"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_12"/>
+
+            <RadioButton
+                android:id="@+id/rb_taocan"
+                style="@style/RadioButtonCustomSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:paddingLeft="@dimen/padding_6"
+                android:gravity="center"
+                android:text="搜索套餐"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_12"/>
+
+        </jufeng.juyancash.ui.customview.LCustomeRadioGroup>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/padding_8"/>
+
+    <jufeng.juyancash.ui.customview.MyKeyboardView1
+        android:id="@+id/ching_keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@android:color/transparent"
+        android:keyPreviewLayout="@layout/preview_background"
+        android:keyTextColor="@color/white"/>
+
+</LinearLayout>

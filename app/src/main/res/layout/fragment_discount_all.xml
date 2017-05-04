@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="整单打折"
+        android:textSize="@dimen/font_18"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/padding_4"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graydark"/>
+
+    <LinearLayout
+        android:id="@+id/layout_discount_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_6"
+        android:layout_marginRight="@dimen/padding_6"
+        android:layout_marginTop="@dimen/padding_4"
+        android:background="@drawable/edittext_focus_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_4"
+            android:text="打折率"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/dark"/>
+
+        <EditText
+            android:id="@+id/et_discount_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@android:color/transparent"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:text="100"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/reddark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="0"
+            android:text="%"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/reddark"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_discount_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_6"
+        android:layout_marginRight="@dimen/padding_6"
+        android:layout_marginTop="@dimen/padding_4"
+        android:background="@drawable/edittext_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_4"
+            android:text="原因"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/dark"/>
+
+        <TextView
+            android:id="@+id/tv_discount_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_4"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="大客户"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/reddark"
+            android:drawableRight="@drawable/in"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_is_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_6"
+        android:layout_marginRight="@dimen/padding_6"
+        android:layout_marginTop="@dimen/padding_4"
+        android:padding="@dimen/padding_4"
+        android:text="对设置为不允许打折的商品也打折"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/dark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <include layout="@layout/layout_payment_bottom"/>
+
+</LinearLayout>

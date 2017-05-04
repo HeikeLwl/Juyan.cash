@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:id="@+id/item_root_layout"
+              android:layout_width="match_parent"
+              android:layout_height="40dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/padding_6"
+        android:maxLines="1"
+        android:text="微信扫码点餐"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/dark"/>
+
+    <TextView
+        android:id="@+id/tv_order_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/padding_6"
+        android:maxLines="1"
+        android:text="NO.23"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/red"/>
+
+</LinearLayout>

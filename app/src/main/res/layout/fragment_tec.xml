@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:padding="@dimen/padding_6"-->
+        <!--android:text="技术支持"-->
+        <!--android:textSize="@dimen/font_18"-->
+        <!--android:textColor="@color/dark"/>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:background="@color/dark"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingLeft="@dimen/padding_12"-->
+        <!--android:paddingRight="@dimen/padding_12"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableLeft="@drawable/one"-->
+            <!--android:drawablePadding="@dimen/padding_12"-->
+            <!--android:padding="@dimen/padding_12"-->
+            <!--android:text="@string/tec_str0"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/graydark"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableLeft="@drawable/two"-->
+            <!--android:drawablePadding="@dimen/padding_12"-->
+            <!--android:padding="@dimen/padding_12"-->
+            <!--android:text="@string/tec_str1"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/graydark"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableLeft="@drawable/three"-->
+            <!--android:drawablePadding="@dimen/padding_12"-->
+            <!--android:padding="@dimen/padding_12"-->
+            <!--android:text="@string/tec_str2"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/graydark"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableLeft="@drawable/four"-->
+            <!--android:drawablePadding="@dimen/padding_12"-->
+            <!--android:padding="@dimen/padding_12"-->
+            <!--android:text="@string/tec_str3"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/graydark"/>-->
+
+    <!--</LinearLayout>-->
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/padding_12"
+        android:layout_marginRight="@dimen/padding_12"/>
+
+
+</LinearLayout>

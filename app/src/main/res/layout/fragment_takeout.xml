@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <jufeng.juyancash.ui.customview.LCustomeRadioGroup
+        android:id="@+id/lcustomeradiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_30"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/padding_8"
+        android:layout_marginBottom="@dimen/padding_8"
+        android:layout_marginRight="@dimen/padding_12"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiobutton_1"
+            android:background="@drawable/area_menu_selector"
+            style="@style/radioButton1"
+            android:text="订餐记录"/>
+
+        <RadioButton
+            android:id="@+id/radiobutton_2"
+            android:background="@drawable/area_menu_selector"
+            android:checked="true"
+            android:layout_marginLeft="@dimen/padding_12"
+            style="@style/radioButton1"
+            android:text="电话订餐"/>
+
+    </jufeng.juyancash.ui.customview.LCustomeRadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_root_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:background="@color/white"
+              android:paddingBottom="@dimen/padding_8"
+              android:paddingTop="@dimen/padding_8">
+
+    <TextView
+        android:id="@+id/tv_serial_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:padding="@dimen/padding_6"
+        android:text="201703211854001"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/dp_14"/>
+
+    <TextView
+        android:id="@+id/tv_order_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/padding_6"
+        android:text="NO.001"
+        android:textColor="@color/theme_0_red_0"
+        android:textSize="@dimen/dp_14"/>
+
+    <TextView
+        android:id="@+id/tv_total_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/padding_6"
+        android:text="120.00"
+        android:textColor="@color/bluelight"
+        android:textSize="@dimen/dp_14"/>
+
+    <TextView
+        android:id="@+id/tv_receivable_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/padding_6"
+        android:text="120.00"
+        android:textColor="@color/theme_0_red_0"
+        android:textSize="@dimen/dp_14"/>
+
+    <TextView
+        android:id="@+id/tv_pay_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/padding_6"
+        android:text="120.00"
+        android:textColor="@color/theme_0_red_0"
+        android:textSize="@dimen/dp_14"/>
+
+    <TextView
+        android:id="@+id/tv_print_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/padding_6"
+        android:text="未付款"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/dp_14"/>
+
+    <TextView
+        android:id="@+id/tv_order_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/padding_6"
+        android:text="未付款"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/dp_14"/>
+
+</LinearLayout>

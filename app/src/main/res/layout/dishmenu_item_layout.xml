@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_root_layout"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dishtype_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:maxEms="6"
+        android:minEms="6"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="@dimen/font_16"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_weight="0"/>
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <jufeng.juyancash.ui.customview.LCustomeRadioGroup
+            android:id="@+id/lcustomeradiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radiobutton_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_radio_button_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/wechat_message"
+                    android:drawablePadding="@dimen/padding_4"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_16"
+                    android:text="微信消息"
+                    android:textColor="@color/black_textcolor_selector"
+                    android:textSize="@dimen/font_16"/>
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:text="10"
+                    android:textSize="@dimen/font_12"
+                    android:textColor="@color/white"
+                    android:background="@drawable/unread_msg_count_background_red"/>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radiobutton_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_radio_button_selector"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/store_message"
+                    android:drawablePadding="@dimen/padding_4"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_16"
+                    android:text="店家通知"
+                    android:textColor="@color/black_textcolor_selector"
+                    android:textSize="@dimen/font_16"/>
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:text="10"
+                    android:textSize="@dimen/font_12"
+                    android:textColor="@color/white"
+                    android:background="@drawable/unread_msg_count_background_red"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radiobutton_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_radio_button_selector"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/system_message"
+                    android:drawablePadding="@dimen/padding_4"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_16"
+                    android:text="系统通知"
+                    android:textColor="@color/black_textcolor_selector"
+                    android:textSize="@dimen/font_16"/>
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:text="10"
+                    android:textSize="@dimen/font_12"
+                    android:textColor="@color/white"
+                    android:background="@drawable/unread_msg_count_background_red"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+        </jufeng.juyancash.ui.customview.LCustomeRadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/view2"/>
+
+        <FrameLayout
+            android:id="@+id/containerright"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/padding_8"
+                android:padding="@dimen/padding_4"
+                android:src="@drawable/clear_message"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_6"
+            android:layout_centerInParent="true"
+            android:text="会员卡详情"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/dark"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_vip_pay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/layout_vip_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_marginRight="@dimen/padding_6"
+            android:background="@drawable/edittext_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员卡卡号"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/dark"/>
+
+            <TextView
+                android:id="@+id/tv_vip_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:layout_centerHorizontal="true"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/red"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_vip_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_marginRight="@dimen/padding_6"
+            android:layout_marginTop="@dimen/padding_4"
+            android:background="@drawable/edittext_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员卡类型"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/dark"/>
+
+            <TextView
+                android:id="@+id/tv_vip_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/red"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_vip_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_marginRight="@dimen/padding_6"
+            android:layout_marginTop="@dimen/padding_4"
+            android:background="@drawable/edittext_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员卡折扣率"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/dark"/>
+
+            <TextView
+                android:id="@+id/tv_vip_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/red"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_4"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_marginRight="@dimen/padding_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:text="是否使用该卡折扣"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/dark"/>
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_12"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_6"
+                    android:layout_weight="1"
+                    android:text="使用"/>
+
+                <RadioButton
+                    android:id="@+id/radio_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_6"
+                    android:layout_weight="1"
+                    android:text="不使用"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_payment_bottom_2"/>
+
+</LinearLayout>

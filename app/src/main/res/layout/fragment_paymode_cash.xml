@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_6"
+        android:layout_gravity="center_horizontal"
+        android:text="现金"
+        android:textSize="@dimen/font_18"
+        android:textColor="@color/dark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_6"
+        android:layout_marginRight="@dimen/padding_6"
+        android:padding="@dimen/padding_6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_4"
+            android:text="应收"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/dark"/>
+
+        <TextView
+            android:id="@+id/tv_receivable_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_4"
+            android:layout_centerHorizontal="true"
+            android:text="150.0"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/dark"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_6"
+        android:layout_marginRight="@dimen/padding_6"
+        android:background="@drawable/edittext_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实收"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/dark"/>
+
+        <EditText
+            android:id="@+id/et_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:layout_centerHorizontal="true"
+            android:inputType="numberDecimal"
+            android:text="150.0"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/red"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_6"
+        android:layout_marginRight="@dimen/padding_6"
+        android:layout_marginTop="@dimen/padding_4"
+        android:background="@drawable/edittext_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="找零"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/dark"/>
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="10.0"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/red"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <include layout="@layout/layout_payment_bottom"/>
+
+</LinearLayout>

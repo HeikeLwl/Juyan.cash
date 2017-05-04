@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/transparent" android:state_checked="false"/>
+    <item android:state_checked="true">
+
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/theme_0_red_0"/>
+                </shape>
+            </item>
+
+            <item android:top="5dp">
+                <shape>
+                    <corners android:topLeftRadius="5dp" android:topRightRadius="5dp" android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp"/>
+                    <solid android:color="@color/activityBackground"/>
+                </shape>
+            </item>
+        </layer-list>
+
+        <shape>
+
+            <solid android:color="@color/activityBackground"/>
+        </shape>
+
+    </item>
+
+</selector>
